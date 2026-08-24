@@ -1,0 +1,127 @@
+:root{
+    --color-primary:#003366;
+    --color-primary-light:#004c99;
+    --color-secondary:#ffd700;
+    --color-background:#f4f4f4;
+    --color-text:#333333;
+    --color-text-light:#666666;
+    --color-white:#fff; /* #ffffff */
+
+    /* Tipos de fuentes */
+    --font-family:'Roboto', arial, sans-serif;
+    --font-size-base:16px;
+    --font-size-large:1.25rem;
+    --font-size-xl:2rem;
+    --font-size-xxl:3.5rem;
+
+    /* Espaciados */
+    --spacing-small:8px;
+    --spacing-medium:16px;
+    --spacing-large:24px;
+    --spacing-xl:32px;
+    --spacing-xxl:48px;
+
+    /* Transiciones */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+}
+
+*{
+    margin:0; /* px */
+    padding:0; /* Contenido va a estar en toda la página */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+header{
+    display:flex;
+    justify-content: space-between; /* Da espacio entre los elementos */
+    align-items: center; /* Centrear elementos verticalmente */
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+header h1{
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-large);
+}
+
+nav ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: 4px;
+}
+
+nav ul li a:hover{
+    background-color: #585858;
+    color: var(--color-secondary);
+}
+
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-xxl) var(--spacing-xl);
+
+    min-height: 60vh;
+    background: linear-gradient(135deg, var(--color-primary), white);
+    color: var(--color-white);
+}
+
+/* main section h2 */
+#inicio h2{
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+}
+
+#inicio p{
+    font-size: var(--font-size-large);
+}
+
+#inicio a{
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: var(--font-size-large);
+    margin: 20px;
+    padding: 30px;
+    transition: all var(--transition-medium);
+    animation: fadeIn 2s ease-in-out;
+}
+
+#inicio a:hover{
+    transform: scale(1.05);
+    box-shadow: var(--color-text);
+    background-color: #f7dc3f;
+}
+
+#peliculas{
+    padding: var(--spacing-xxl) var(--font-size-xl);
+    background-color: var(--color-white);
+}
+
+#peliculas h2{
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
