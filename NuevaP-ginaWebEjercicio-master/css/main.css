@@ -1,0 +1,9 @@
+@import 'base/variables.css';
+@import 'base/reset.css';
+
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/card.css';
+@import 'components/testimonials.css';
+
+
